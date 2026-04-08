@@ -1,6 +1,6 @@
 {
   "app_id": "cli_a943a2105938dcb1",
-  "app_secret": "YOUR_APP_SECRET",
+  "app_secret": "YOUR_APP_SECRET_HERE",
   "spreadsheet_token": "Egr6saGByhYAPttyKRtcXbKRnfc",
   "sheets": {
     "blood_routine": {
@@ -25,34 +25,14 @@
     }
   },
   "report_types": {
-    "blood_routine": {
-      "name": "血常规",
-      "keywords": ["血常规", "血分析", "Blood", "WBC", "白细胞"],
-      "indicators": ["WBC", "ANC", "PLT", "Hb", "CRP", "LYM"]
-    },
-    "lipid": {
-      "name": "血脂",
-      "keywords": ["血脂", "胆固醇", "甘油三酯", "Lipid"],
-      "indicators": ["TC", "TG", "HDL-C", "LDL-C"]
-    },
-    "tumor_markers": {
-      "name": "肿瘤标志物",
-      "keywords": ["肿瘤", "CEA", "CA-125", "CA19-9", "Tumor"],
-      "indicators": ["CA-125", "CYFRA21-1", "VEGF", "SCC", "CEA", "CA19-9"]
-    },
-    "ct_report": {
-      "name": "CT/MRI",
-      "keywords": ["CT", "MRI", "影像", "CT报告", "核磁"],
-      "indicators": []
-    }
+    "blood_routine": { "name": "血常规", "keywords": ["血常规", "血分析"], "indicators": ["WBC","ANC","PLT","Hb","CRP","LYM"] },
+    "lipid": { "name": "血脂", "keywords": ["血脂","胆固醇"], "indicators": ["TC","TG","HDL-C","LDL-C"] },
+    "tumor_markers": { "name": "肿瘤标志物", "keywords": ["肿瘤","CA-125","CEA"], "indicators": ["CA-125","CYFRA21-1","VEGF","SCC","CEA","CA19-9"] },
+    "ct_report": { "name": "CT/MRI", "keywords": ["CT","MRI","影像","核磁"], "indicators": [] }
   },
   "settings": {
-    "deduplication": {
-      "enabled": true,
-      "key_fields": ["date", "hospital", "report_type"]
-    },
+    "deduplication": { "enabled": true, "key_fields": ["date","hospital","report_type"] },
     "auto_trend": true,
     "emergency_warning": true
-  },
-  "_notes": "复制此文件为 config.json 并替换 YOUR_APP_SECRET 为真实密钥"
+  }
 }

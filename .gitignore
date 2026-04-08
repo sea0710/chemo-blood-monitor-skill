@@ -1,0 +1,24 @@
+# 敏感配置文件 - 包含飞书应用凭证
+config.json
+
+# 本地配置（包含真实密钥）
+*.secret
+.env
+.env.local
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# 临时文件
+*.tmp
+*.temp
+*.log

@@ -1,7 +1,7 @@
 {
-  "app_id": "YOUR_APP_ID",
+  "app_id": "cli_a943a2105938dcb1",
   "app_secret": "YOUR_APP_SECRET",
-  "spreadsheet_token": "YOUR_SPREADSHEET_TOKEN",
+  "spreadsheet_token": "Egr6saGByhYAPttyKRtcXbKRnfc",
   "sheets": {
     "blood_routine": {
       "name": "血常规",
@@ -54,5 +54,5 @@
     "auto_trend": true,
     "emergency_warning": true
   },
-  "notes": "复制此文件为 config.json 并填入您的真实飞书应用凭证"
+  "_notes": "复制此文件为 config.json 并替换 YOUR_APP_SECRET 为真实密钥"
 }
